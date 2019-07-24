@@ -4,6 +4,10 @@
 	<title>Mario</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<style>
+		/* body .container {
+			height: 100%;
+			width: 100%;
+		} */
 		.row, .column {
 			padding: 0px;
 			margin: 0px;
@@ -16,7 +20,7 @@
 			background-color: blue;
 		}
 		.beige {
-			background-color: beige;
+			background-color: bisque;
 		}
 		.black {
 			background-color: black;
@@ -27,9 +31,13 @@
 		.brown {
 			background-color: brown;
 		}
-		.none {
-			background-color: transparent;
-		}
+		/* body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+		} */
 		@media (min-width: 576px) {
 			.row, .column {
 				height: 45px;
@@ -56,36 +64,28 @@
 	<!-- USE BOOTSTRAP'S CONTAINER, ROW, AND COLUMN CLASSES TO DRAW YOUR PIXEL ART! -->
 	<div class="container">
 		<div class="row">
-			<div class="col-3 none"></div>
-			<div class="col-6 red"></div>
+			<div class="col-6 red offset-md-3"></div>
 			<div class="col-3 none"></div>
 		</div>
 		<div class="row">
-			<div class="col-2 none"></div>
-			<div class="col-9 red"></div>
-			<div class="col-1 none"></div>
+			<div class="col-9 red offset-md-2"></div>
 		</div>
 		<div class="row">
-			<div class="col-2 none"></div>
-			<div class="col-3 brown"></div>
+			<div class="col-3 brown offset-md-2"></div>
 			<div class="col-2 beige"></div>
 			<div class="col-1 black"></div>
 			<div class="col-1 beige"></div>
-			<div class="col-2 none"></div>
 		</div>
 		<div class="row">
-			<div class="col-1 none"></div>
-			<div class="col-1 brown"></div>
+			<div class="col-1 brown offset-md-1"></div>
 			<div class="col-1 beige"></div>
 			<div class="col-1 brown"></div>
 			<div class="col-3 beige"></div>
 			<div class="col-1 black"></div>
 			<div class="col-3 beige"></div>
-			<div class="col-1 none"></div>
 		</div>
 		<div class="row">
-			<div class="col-1 none"></div>
-			<div class="col-1 brown"></div>
+			<div class="col-1 brown offset-md-1"></div>
 			<div class="col-1 beige"></div>
 			<div class="col-2 brown"></div>
 			<div class="col-3 beige"></div>
@@ -93,32 +93,24 @@
 			<div class="col-3 beige"></div>
 		</div>
 		<div class="row">
-			<div class="col-1 none"></div>
-			<div class="col-2 brown"></div>
+			<div class="col-2 brown offset-md-1"></div>
 			<div class="col-4 beige"></div>
 			<div class="col-4 black"></div>
-			<div class="col-1 none"></div>
 		</div>
 		<div class="row">
-			<div class="col-2 none"></div>
-			<div class="col-8 beige"></div>
-			<div class="col-2 none"></div>
+			<div class="col-8 beige offset-md-2"></div>
 		</div>
 		<div class="row">
-			<div class="col-2 none"></div>
-			<div class="col-2 red"></div>
+			<div class="col-2 red offset-md-2"></div>
 			<div class="col-1 blue"></div>
 			<div class="col-3 red"></div>
-			<div class="col-4 none"></div>
 		</div>
 		<div class="row">
-			<div class="col-1 none"></div>
-			<div class="col-3 red"></div>
+			<div class="col-3 red offset-md-1"></div>
 			<div class="col-1 blue"></div>
 			<div class="col-2 red"></div>
 			<div class="col-1 blue"></div>
 			<div class="col-3 red"></div>
-			<div class="col-1 none"></div>
 		</div>
 		<div class="row">
 			<div class="col-4 red"></div>
@@ -147,23 +139,16 @@
 			<div class="col-2 beige"></div>
 		</div>
 		<div class="row">
-			<div class="col-2 none"></div>
-			<div class="col-3 blue"></div>
-			<div class="col-2 none"></div>
-			<div class="col-3 blue"></div>
-			<div class="col-2 none"></div>
+			<div class="col-3 blue offset-md-2"></div>
+			<div class="col-3 blue offset-md-2"></div>
 		</div>
 		<div class="row">
-			<div class="col-1 none"></div>
-			<div class="col-3 brown"></div>
-			<div class="col-4 none"></div>
-			<div class="col-3 brown"></div>
-			<div class="col-1 none"></div>
+			<div class="col-3 brown offset-md-1"></div>
+			<div class="col-3 brown offset-md-4"></div>
 		</div>
 		<div class="row">
 			<div class="col-4 brown"></div>
-			<div class="col-4 none"></div>
-			<div class="col-4 brown"></div>
+			<div class="col-4 brown offset-md-4"></div>
 		</div>
 	</div>
 </body>
